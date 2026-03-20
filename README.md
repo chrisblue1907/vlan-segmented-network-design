@@ -3,11 +3,11 @@
 
 </p>
 
-# VLAN Segmented Network Design and Implementation
+# VLAN Segmented Network Design and Setup
 
 ## Project Overview
 
-This project showcases the implementation of a VLAN-segmented network in a live church production environment. The network was designed to separate traffic for audio (Dante), control systems, streaming/production, and general use to improve performance and reliability.
+This project shows the setup of a VLAN-segmented network in a live church production environment. The network was designed to separate traffic for audio (Dante), control systems, and general use to improve performance and reliability.
 
 Using a Ubiquiti Dream Machine Pro and managed UniFi Pro switches, VLANs were configured with dedicated subnets, DHCP scopes, and optimized switch port settings. Special attention was given to latency-sensitive systems such as Dante audio, including multicast optimization and traffic prioritization.
 
@@ -27,7 +27,7 @@ This project demonstrates practical experience with network segmentation, switch
 
 ## Step 1: Planning the Network
 
-Before implementation, the network was designed to separate different types of traffic to improve performance and reliability.
+Before installation, the network was designed to separate different types of traffic to improve performance and reliability.
 
 ### VLAN Plan:
 - VLAN 1 – Default
@@ -36,13 +36,13 @@ Before implementation, the network was designed to separate different types of t
 - VLAN 60 – NDI
 - VLAN 100 – WiFi
 
-This segmentation ensures that high-bandwidth and latency-sensitive systems do not interfere with each other.
+This segmentation makes sure that high-bandwidth and latency-sensitive systems do not interfere with each other.
 
 ---
 
 ## Step 2: Creating VLAN Networks in UniFi
 
-VLANs were created in the UniFi controller with their own subnets and DHCP scopes.
+VLANs were created in the UniFi controller, each with its own subnet and DHCP scope.
 
 [VLAN Configuration]<img width="1337" height="583" alt="Screenshot 2026-03-20 at 10 26 28 AM" src="https://github.com/user-attachments/assets/394aaf7d-09a4-4a93-a534-a807ee97534f" />
 
@@ -56,7 +56,7 @@ Each VLAN was assigned:
 
 ## Step 3: Configuring Network Segmentation
 
-Each VLAN was configured to isolate traffic where necessary to prevent unnecessary communication between systems.
+Each VLAN was configured to isolate traffic where necessary, preventing unnecessary communication between systems.
 
 For example:
 - Dante Audio VLAN was isolated to prevent interference
@@ -84,7 +84,7 @@ For Dante-enabled devices:
 
 ## Step 5: Optimizing for Audio (Dante Network)
 
-A dedicated VLAN was used for Dante audio to ensure low latency and stability.
+A dedicated VLAN was used for Dante audio to improve latency and stability.
 
 - IGMP Snooping enabled for multicast optimization
 - DHCP configured for consistent IP management
@@ -96,7 +96,7 @@ A dedicated VLAN was used for Dante audio to ensure low latency and stability.
 
 The diagram below shows how the network infrastructure is organized across the production environment. A Ubiquiti Dream Machine Pro (UDM Pro) connects to multiple switches, providing network access to areas such as the production booth, stage, and office systems.
 
-VLANs are used to separate traffic between systems like audio (Dante), control devices, video/streaming, and general network use. This helps keep the network stable and prevents one system from affecting another.
+VLANs are used to separate traffic between systems, such as audio (Dante), control devices, video/streaming, and general network use. This helps keep the network stable and prevents one system from affecting another.
 
 [Network Topology]<img width="3308" height="1566" alt="image" src="https://github.com/user-attachments/assets/9395fd58-e675-44b9-860a-5fbce1620c99" />
 
@@ -119,7 +119,7 @@ Spanning Tree Protocol (STP) is used across the network to maintain stability an
 
 ## What I Learned
 
-- How to design and implement VLAN segmentation
+- How to design and set up VLAN segmentation
 - Importance of multicast handling (IGMP Snooping)
 - Configuring switch ports based on device requirements
 - Troubleshooting real-world network issues
