@@ -1,4 +1,4 @@
-# VLAN Segmented Network Design (Church Environment)
+# VLAN Segmented Network Design and Implementation
 
 ## Project Overview
 
