@@ -1,4 +1,7 @@
-<img width="3234" height="1016" alt="image" src="https://github.com/user-attachments/assets/883f96e9-192b-4618-bad9-7f67806c7952" />
+<p align="center">
+  <img width="3252" height="1016" alt="image" src="https://github.com/user-attachments/assets/abc4655d-f2bc-43c2-ac1d-9e0a179b4552" />
+
+</p>
 
 # VLAN Segmented Network Design and Implementation
 
