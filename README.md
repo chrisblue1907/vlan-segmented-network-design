@@ -1,3 +1,5 @@
+<img width="3234" height="1016" alt="image" src="https://github.com/user-attachments/assets/883f96e9-192b-4618-bad9-7f67806c7952" />
+
 # VLAN Segmented Network Design and Implementation
 
 ## Project Overview
@@ -7,6 +9,17 @@ This project showcases the implementation of a VLAN-segmented network in a live 
 Using a Ubiquiti Dream Machine Pro and managed UniFi Pro switches, VLANs were configured with dedicated subnets, DHCP scopes, and optimized switch port settings. Special attention was given to latency-sensitive systems such as Dante audio, including multicast optimization and traffic prioritization.
 
 This project demonstrates practical experience with network segmentation, switch configuration, and building stable systems in real-world environments.
+
+---
+
+## Environment
+
+- Router: UniFi Dream Machine Pro (UDM Pro)
+- Switches: UniFi Managed Switches
+- Network Type: VLAN-Segmented Production Network
+- Location: Church Production Environment
+- Services: DHCP, VLAN Segmentation, Multicast Support for Audio Systems
+
 ---
 
 ## Step 1: Planning the Network
