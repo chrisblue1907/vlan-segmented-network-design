@@ -37,7 +37,7 @@ Before I installed the system, I designed the network to separate different type
 
 This makes sure that high-bandwidth and latency-sensitive systems do not interfere with each other.
 
-We werent ablke ti 
+We ended up not needing all of the VLANs yet, but I have it planned out already, so there is room for growth.
 
 ---
 
@@ -57,11 +57,11 @@ Each VLAN was assigned:
 
 ## Step 3: Configuring Network Segmentation
 
-Each VLAN was configured to isolate traffic where necessary, preventing unnecessary communication between systems.
+Each VLAN was made to isolate traffic where necessary, preventing unnecessary communication between systems.
 
 For example:
 - Dante Audio VLAN was isolated to prevent interference
-- Control systems were separated from general network traffic
+- Control systems were separated from general network
 
 <img width="384" height="922" alt="Screenshot 2026-03-20 at 10 28 33 AM" src="https://github.com/user-attachments/assets/829dcc5f-c051-44b3-9f81-6be9c70797ca" />
 <img width="384" height="922" alt="Screenshot 2026-03-20 at 10 28 46 AM" src="https://github.com/user-attachments/assets/328d79a8-a87e-4123-b230-2d46dab4ba2c" />
@@ -95,9 +95,9 @@ A dedicated VLAN was used for Dante audio to improve latency and stability.
 
 ## Step 6: Network Topology Overview
 
-The diagram below shows how the network infrastructure is organized across the production environment. A Ubiquiti Dream Machine Pro (UDM Pro) connects to multiple switches, providing network access to areas such as the production booth, stage, and office systems.
+The picture below shows how the network infrastructure is organized. A UDM Pro connects to multiple switches, providing network access to the production booth, stage, and office systems.
 
-VLANs are used to separate traffic between systems, such as audio (Dante), control devices, video/streaming, and general network use. This helps keep the network stable and prevents one system from affecting another.
+VLANs are used to separate traffic between systems, such as audio (Dante), control devices, and general network use. This helps keep the network stable and prevents one system from affecting another.
 
 [Network Topology]<img width="3308" height="1566" alt="image" src="https://github.com/user-attachments/assets/9395fd58-e675-44b9-860a-5fbce1620c99" />
 
