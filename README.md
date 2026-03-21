@@ -7,36 +7,37 @@
 
 ## Project Overview
 
-This project shows the setup of a VLAN-segmented network in a live church production environment. The network was designed to separate traffic for audio (Dante), control systems, and general use to improve performance and reliability.
+This project shows the setup of a VLAN-segmented network in a live church production environment. I set this up to increase performance and reliability during services and everyday use.
 
-Using a Ubiquiti Dream Machine Pro and managed UniFi Pro switches, VLANs were configured with dedicated subnets, DHCP scopes, and optimized switch port settings. Special attention was given to latency-sensitive systems such as Dante audio, including multicast optimization and traffic prioritization.
-
-This project demonstrates practical experience with network segmentation, switch configuration, and building stable systems in real-world environments.
+I used a UDM Pro and USW Pro Switches, configured VLANs and DHCP Scopes within those VLANs, and optimized port settings.
 
 ---
 
-## Environment
+## Environments Used
 
-- Router: UniFi Dream Machine Pro (UDM Pro)
-- Switches: UniFi Managed Switches
-- Network Type: VLAN-Segmented Production Network
-- Location: Church Production Environment
-- Services: DHCP, VLAN Segmentation, Multicast Support for Audio Systems
+- UniFi Dream Machine Pro (UDM Pro)
+- UniFi Managed Pro Switches (USW)
+- VLAN-Segmented Network
+- DHCP, Multicast Support for Audio Systems
 
 ---
 
 ## Step 1: Planning the Network
 
-Before installation, the network was designed to separate different types of traffic to improve performance and reliability.
+Before I installed the system, I designed the network to separate different types of traffic to improve performance and reliability.
 
 ### VLAN Plan:
-- VLAN 1 – Default
-- VLAN 20 – Control
-- VLAN 40 – Dante Audio
-- VLAN 60 – NDI
-- VLAN 100 – WiFi
+- Default	-	192.168.0.1/22 - VLAN 1
+- sACN	-	10.0.0.1/8 - VLAN 10
+- Control	-	192.168.20.1/24 - VLAN 20
+- KVMs	-	192.168.30.1/24 - VLAN 30
+- Dante	-	192.168.40.1/24 - VLAN 40
+- NDI	-	192.168.60.1/24 - VLAN 60
+- WiFi	-	192.168.100.1/22 - VLAN 100
 
-This segmentation makes sure that high-bandwidth and latency-sensitive systems do not interfere with each other.
+This makes sure that high-bandwidth and latency-sensitive systems do not interfere with each other.
+
+We werent ablke ti 
 
 ---
 
